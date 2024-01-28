@@ -7,7 +7,7 @@ def process_input(input_str):
     result_str = ""
     for entry in entries:
         description = entry[3].strip()
-        amount = entry[2].replace(',', '.').strip()
+        amount = entry[2].replace('.', ',').strip()
 
         result_str += f"{description}\t-\t€ {amount}\n"
 
@@ -28,7 +28,7 @@ input_str = """
 
 output_str = process_input(input_str)
 msg = """Remember to copy the output and paste it in the expenses sheet
- (copy special -> values only)"""
+ (paste special -> values only)"""
 
 print(msg)
 print(output_str)
