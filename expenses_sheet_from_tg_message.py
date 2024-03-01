@@ -1,5 +1,7 @@
 import re
 
+# TODO make it runnable via file input
+
 
 def process_input(input_str):
     entries = re.findall(r'(.+), \[(\d{2}/\d{2}/\d{4} \d{2}:\d{2})\]\n([\d,]+) (.+)', input_str)
@@ -31,4 +33,5 @@ msg = """Remember to copy the output and paste it in the expenses sheet
  (paste special -> values only)"""
 
 print(msg)
-print(output_str)
+print(output_str+"\n")
+print("""Remember to run it on https://www.online-python.com/ otherwise tabs don't work properly.""")
