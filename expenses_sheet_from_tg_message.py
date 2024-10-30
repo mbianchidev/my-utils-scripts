@@ -9,7 +9,7 @@ def process_input(input_str):
     result_str = ""
     for entry in entries:
         description = entry[3].strip()
-        amount = entry[2].replace('.', ',').strip()
+        amount = entry[2]
 
         result_str += f"{description}\t-\t€ {amount}\n"
 
